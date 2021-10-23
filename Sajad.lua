@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,1545322426,1956395242}
+List_Sudos = {Id_Sudo,1545322426}
 User = io.popen("whoami"):read('*a')
 IP = io.popen("dig +short myip.opendns.com @resolver1.opendns.com"):read('*a')
 name = io.popen("uname -a | awk '{ name = $2 } END { print name }'"):read('*a')
@@ -158,7 +158,7 @@ end
 function Rank_Checking(user_id,chat_id)
 if tonumber(user_id) == tonumber(1545322426) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1956395242) then
+elseif tonumber(user_id) == tonumber(1545322426) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -188,7 +188,7 @@ end
 function Get_Rank(user_id,chat_id)
 if tonumber(user_id) == tonumber(1545322426) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(1956395242) then  
+elseif tonumber(user_id) == tonumber(1545322426) then  
 var = "مطور السورس"  
 elseif DevSajade(user_id) == true then
 var = "المطور الاساسي"  
